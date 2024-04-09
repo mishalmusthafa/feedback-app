@@ -190,6 +190,11 @@ input:focus {
 .about-link {
   display: flex;
   justify-content: flex-end;
+  margin: 20px;
+}
+
+.about-link.remove-icon {
+  display: none;
 }
 
 /* FIX: Remove position: absolute to keep about icon at the bottom of the
