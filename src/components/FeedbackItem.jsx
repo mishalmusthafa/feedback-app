@@ -4,8 +4,8 @@ import Card from "./shared/Card";
 import PropTypes from 'prop-types';
 import FeedbackContext from '../context/FeedbackContext';
 
-function FeedbackItem({ item}) {
-const {deleteFeedback} = useContext(FeedbackContext)
+function FeedbackItem({ item }) {
+  const { deleteFeedback } = useContext(FeedbackContext);
   return (
     <Card>
       <div className="num-display">{item.rating}</div>
