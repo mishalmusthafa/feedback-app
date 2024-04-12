@@ -8,12 +8,16 @@ export const FeedbackProvider = ({ children }) => {
       id: 1,
       text: 'This item is from the context',
       rating: 10,
-    }
+    },
+
   ]);
 
-  return <FeedbackContext.Provider value={{ feedback }}>
+  return <FeedbackContext.Provider value={
+    { feedback }
+  }>
     {children}
   </FeedbackContext.Provider>;
 };
 
 export default FeedbackContext;
+

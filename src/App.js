@@ -12,24 +12,16 @@ import { FeedbackProvider } from './context/FeedbackContext';
 
 function App() {
   const [feedback, setFeedback] = useState(FeedbackData);
-  const [aboutIcon, setAboutIcon] = useState(true);
 
   const deleteFeedback = (id) => {
     if (window.confirm('Are you sure you want to delete?'))
       setFeedback(feedback.filter((item) => (item.id !== id)));
   };
 
-
-  const deleteAboutIcon = () => {
-    setAboutIcon(false);
-  };
-
-
   const addFeedback = (newFeedback) => {
     newFeedback.id = uuidv4();
     setFeedback([newFeedback, ...feedback]);
   };
-
 
   return (
     <FeedbackProvider>
@@ -40,8 +32,8 @@ function App() {
             <>
               <div className='container'>
                 <FeedbackForm handleAdd={addFeedback} />
-                <FeedbackStats feedback={feedback} />
-                <FeedbackList feedback={feedback} handleDelete={deleteFeedback} />
+                <FeedbackStats />
+                <FeedbackList handleDelete={deleteFeedback} />
               </div>
               <AboutIconLink />
             </>
