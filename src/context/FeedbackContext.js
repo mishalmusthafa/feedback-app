@@ -50,6 +50,12 @@ export const FeedbackProvider = ({ children }) => {
       item,
       edit: true
     });
+    changeCardColor(item.id);
+  };
+
+  // Change the card color while editing the card
+  const changeCardColor = (id) => {
+    console.log('color change', id);
   };
 
   return <FeedbackContext.Provider value={

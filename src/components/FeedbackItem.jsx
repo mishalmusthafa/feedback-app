@@ -6,10 +6,10 @@ import FeedbackContext from '../context/FeedbackContext';
 
 function FeedbackItem({ item }) {
 
-  const { deleteFeedback, editFeedback } = useContext(FeedbackContext);
-  
+  const { deleteFeedback, editFeedback, feedbackEdit } = useContext(FeedbackContext);
+
   return (
-    <Card>
+    <Card editMode={feedbackEdit.edit === true && feedbackEdit.item.id === item.id ? true : false} >
       <div className="num-display">{item.rating}</div>
       <button onClick={() => { deleteFeedback(item.id); }} className='close'>
         <FaTimes color='purple' />
