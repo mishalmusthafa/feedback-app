@@ -192,6 +192,8 @@ input:focus {
   color: rebeccapurple;
 }
 
+
+
 /* FIX: Remove position: absolute to keep about icon at the bottom of the
  * document */
 .about-link {

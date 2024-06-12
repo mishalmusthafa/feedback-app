@@ -1,19 +1,19 @@
 {
   "feedback": [
     {
-      "id": 3,
+      "text": "Great Service. Thank you ",
       "rating": 10,
-      "text": "This is feedback item3 coming from backend"
+      "id": 3
     },
     {
-      "text": "This is a test",
-      "rating": 6,
-      "id": 4
-    },
-    {
-      "text": "This is a new test Updatedsdsdsds",
-      "rating": 5,
+      "text": "The product is great. Thanks for this",
+      "rating": 9,
       "id": 5
+    },
+    {
+      "text": "Packing is not up to the mark. The product is great. I am gonna suggest to my frinds",
+      "rating": 5,
+      "id": 6
     }
   ]
 }
