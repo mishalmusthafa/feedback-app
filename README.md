@@ -1,6 +1,19 @@
-# Getting Started with Create React App
+# React Feedback App
+This is a project from my React Front To Back 2022 course. It allows users to add, update and delete feedback. It uses a mock REST api with json-server.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project goes over all of the fundamentals of React including...
+
+- Components
+- JSX
+- Props (proptypes, defaultprops, etc)
+- State (Component & App Level)
+- Styling
+- Handling Events
+- Lists & Keys
+- Forms
+- Context API
+- HTTP Requests
+
 
 ## Available Scripts
 
@@ -39,32 +52,29 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Set Environment Variables
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Rename the .envexample to .env and add your [MongoDB](https://www.mongodb.com/) database URI and your JWT secret
 
-### Code Splitting
+### Install backend dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm install
+```
 
-### Analyzing the Bundle Size
+### Install client dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+cd frontend
+npm install
+```
 
-### Making a Progressive Web App
+### Run app in development (frontend & backend)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm run dev
+```
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
